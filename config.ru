@@ -1,11 +1,10 @@
 require 'rubygems'
 require 'sinatra'
 
-root_dir = File.dirname(__FILE__)
+Sinatra::Application.default_options.merge!({
+	:run => false,
+	:env => (ENV['RACK_ENV'] || 'production')
+})
 
-set :environment, ENV['RACK_ENV'].to_sym
-set :root,        root_dir
-set :app_file,    File.join(root_dir, 'infinite.rb')
-disable :run
-
-run Sinatra::Application
+require 'infinite'
+run Sinatra.application
