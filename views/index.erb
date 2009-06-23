@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+
+<html lang="en">
+	<head>
+		<title>Infinite Summer</title>
+	</head>
+	
+	<body>
+	<h1>Infinite Summer</h1>
+	<h2>Next mile marker</h2>
+	<h3 class="date"><%= @milestone.strftime("%A, %b %e") %></h3>
+	<p class="page">
+		<strong>Page</strong>
+		<span class="num"><%= @page %></span>
+	</p>
+	<p class="page">
+		<strong>Kindle Location</strong>
+		<span class="num"><%= @location %></span>
+	</p>
+	
+	</body>
+</html>
