@@ -1,0 +1,68 @@
+/* @override http://infinite.local.practical.cc/css/master.css */
+
+/*@import url(lib/fonts.css);*/
+@import url(lib/reset.css);
+
+body {
+ 	color: #444;
+ 	font-family: Helvetica;
+ 	background-color: #fff;
+}
+
+#container {
+ 	width: 320px;
+ 	background: #fff;
+}
+
+#container h1 {
+ 	text-transform: uppercase;
+ 	letter-spacing: 3px;
+ 	font-weight: bold;
+ 	text-align: center;
+ 	padding: 10px;
+ 	background: url(../img/logo.png) no-repeat 0 -5px;
+ 	height: 90px;
+ 	text-indent: -9999px;
+}
+
+#container .next {
+ 	padding: 10px;
+ 	border: 1px solid #ccc;
+ 	border-width: 1px 0;
+ 	text-align: center;
+ 	font-size: 20px;
+ 	background: #ffd;
+ 	color: #c4b68a;
+}
+
+#container .next strong {
+ 	font-weight: bold;
+ 	color: #d1a65c;
+}
+
+.format {
+ 	background: url(../img/book-sm.png) no-repeat 20px center;
+ 	height: 100px;
+ 	padding: 10px;
+ 	padding-left: 110px;
+ 	border-bottom: 1px solid #ccc;
+}
+
+.format.kindle {
+ 	background-image: url(../img/kindle-sm.png);
+}
+
+.format strong {
+ 	display: block;
+ 	font-weight: bold;
+ 	text-transform: uppercase;
+ 	padding: 20px 0 5px;
+ 	color: #70b7ff;
+}
+
+.format .num {
+ 	display: block;
+ 	font-size: 36px;
+ 	line-height: 30px;
+ 	color: #ff6900;
+}

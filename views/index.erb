@@ -3,20 +3,30 @@
 <html lang="en">
 	<head>
 		<title>Infinite Summer</title>
+		<link rel="stylesheet" href="/css/master.css" type="text/css" media="screen" title="no title" charset="utf-8">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="viewport" content="width=320,initial-scale=1,user-scalable=no">
 	</head>
 	
 	<body>
-	<h1>Infinite Summer</h1>
-	<h2>Next mile marker</h2>
-	<h3 class="date"><%= @milestone.strftime("%A, %b %e") %></h3>
-	<p class="page">
-		<strong>Page</strong>
-		<span class="num"><%= @page %></span>
-	</p>
-	<p class="page">
-		<strong>Kindle Location</strong>
-		<span class="num"><%= @location %></span>
-	</p>
+	
+	<div id="container">
+		<h1>Infinite Summer</h1>
+		
+		<p class="next">
+			By <strong class="date"><%= @milestone.strftime("%A, %B %e") %></strong>,<br>
+			you should be at or past:
+		</p>
+		
+		<p class="format book page">
+			<strong>Page</strong>
+			<span class="num"><%= @page %></span>
+		</p>
+		<p class="format kindle location">
+			<strong>Kindle Location</strong>
+			<span class="num"><%= @location %></span>
+		</p>
+	</div>
 	
 	</body>
 </html>
