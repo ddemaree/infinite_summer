@@ -13,6 +13,14 @@ schedule.each do |row|
   break if row[:date] > Date.today
 end
 
+before do
+end
+
+get '/', :agent => /(?:iPhone|iPod)/ do
+  @milestone, @page, @location = current_row[:date], current_row[:page], current_row[:location]
+  erb :mobile
+end
+
 get '/' do
   # Get indiv vars for params
   @milestone, @page, @location = current_row[:date], current_row[:page], current_row[:location]
